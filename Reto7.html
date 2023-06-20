@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retos</title>
+	<link rel="stylesheet" href="css/reto7.css">
+	
+</head>
+<body>
+
+    <nav>
+		<ul class="menu-horizontal">
+            <li><a href="Reto1.html">Reto 1</a></li>
+            <li><a href="Reto2.html">Reto 2</a></li>
+            <li><a href="Reto3.html">Reto 3</a></li>
+            <li><a href="Reto4.html">Reto 4</a></li>
+            <li><a href="Reto5.html">Reto 5</a></li>
+            <li><a href="Reto6.html">Reto 6</a></li>
+            <li><a href="Reto7.html">Reto 7</a></li>
+        </ul>
+		<div class="centered-text">
+			Retos JavaScript - Juan El Kantar
+		</div>
+	
+	</nav>
+    <div id="container" class="centered-text content">
+  <h1>Formulario de Registro</h1>
+
+<!--Tipo de documento-->
+<form action="#" id="frmvalidacion" name="frmvalidacion" novalidate>
+  <label for="Tidoc">Tipo Documento</label>
+  <select name="Tidoc" id="Tidoc">
+      <option value="1">Cedula de Ciudadania</option>
+      <option value="2">Tarjeta de Identidad</option>
+      <option value="3">Pasaporte de Extranjeria</option>
+  </select>
+  <div id="Nodoc">
+  <label for="Nodoc">Documento</label>
+  <input type="number" id="Nodoc" name="Nodoc" placeholder="Numero Documento" class="">
+  <div class="feedback"></div>
+  </div>
+  <div id="Nom">
+  <label for="Nom">Nombre</label>
+  <input type="text" id="Nom" name="Nom" placeholder="Nombre">
+  <div class="feedback"></div>
+  </div>
+  <div id="Apl">
+  <label for="Apl">Apellido</label>
+  <input type="text" id="Apl" name="Apl" placeholder="Apellido">
+  <div class="feedback"></div>
+  </div>
+  <div id="FeNa">
+  <label for="FeNa">Fecha Nacimiento</label>
+  <input type="date" id="FeNa" name="FeNa">
+  <div class="feedback"></div>
+  </div>
+  <div id="Coel">
+  <label for="Coel">Correo electrónico</label>
+  <input type="email" id="Coel" name="Coel" placeholder="Correo electrónico">
+  <div class="feedback"></div>
+  </div>
+  <div id="Pass">
+  <label for="Pass">Contraseña</label>
+  <input type="password" id="Pass" name="Pass" placeholder="Contraseña">
+  <div class="feedback"></div>
+  </div>
+  <div id="CoPass">
+  <label for="CoPass">Confirmar contraseña</label>
+  <input type="password" id="CoPass" name="CoPass" placeholder="Confirmacion contraseña">
+  <div class="feedback"></div>
+  </div>
+  <label>Aceptar condiciones</label>
+  <input type="checkbox" name="Te" id="Te">
+  <button type="submit" >Registrarse</button>
+  <button type="button" id="abrirModal">Ver condiciones</button>
+</form>
+<div id="ventanaModal" class="modal">
+  <div id="contenidoModal" >
+      <span class="cerrarModal">X</span>
+          <p>Terminos de uso</p>
+  </div>
+</div>
+<script src="js/Reto7.js"></script>
+</body>
+</html>

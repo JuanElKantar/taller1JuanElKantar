@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retos</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="js/Reto5.js"></script>
+</head>
+<body>
+    <nav>
+		<ul class="menu-horizontal">
+            <li><a href="Reto1.html">Reto 1</a></li>
+            <li><a href="Reto2.html">Reto 2</a></li>
+            <li><a href="Reto3.html">Reto 3</a></li>
+            <li><a href="Reto4.html">Reto 4</a></li>
+            <li><a href="Reto5.html">Reto 5</a></li>
+            <li><a href="Reto6.html">Reto 6</a></li>
+            <li><a href="Reto7.html">Reto 7</a></li>
+        </ul>
+		<div class="centered-text">
+			Retos JavaScript - Juan El Kantar
+		</div>
+	</nav>
+
+    <div id="container" class="centered-text content">
+        <h1>Comprobar datos de instructores</h1>
+        <form>
+			<label for="nombre">Escoge el nombre del Instructor</label>
+            <select id="nombre" name="nombre">
+				<option value="Jennifer">Jennifer</option>
+				<option value="Sandra">Sandra</option>
+                <option value="Margarita">Margarita</option>
+                <option value="Erick">Erick</option>
+                <option value="Cristian">Cristian</option>
+                <option value="Julio">Julio</option>
+                <option value="Manuel">Manuel</option>
+			</select>
+
+			<label for="apellido">Escoge el apellido del Instructor</label>
+            <select id="apellido" name="apellido">
+				<option value="Garavito">Garavito</option>
+				<option value="Guarín">Guarín</option>
+				<option value="Buitrago">Buitrago</option>
+                <option value="Rueda">Rueda</option>
+                <option value="Fajardo">Fajardo</option>
+                <option value="Buitrago">Buitrago</option>
+                <option value="Granados">Granados</option>
+			</select>
+
+			<label for="actividad">Escoge la actividad del Instructor</label>
+            <select id="actividad" name="actividad">
+				<option value="Java">Java</option>
+				<option value="Prototipado">Prototipado</option>
+				<option value="JavaScript">JavaScript</option>
+                <option value="Diseño de Proyecto">Diseño de Proyecto</option>
+                <option value="Bases de Datos">Bases de Datos</option>
+                <option value="Python">Python</option>
+                <option value="Derechos Fundamentales para el Trabajo">Derechos Fundamentales para el Trabajo</option>
+			</select>
+			<button type="button" onclick="comprobarInstructor()">COMPROBAR</button>
+		</form>
+    </div>
+</body>
+</html>
