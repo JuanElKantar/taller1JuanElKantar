@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retos</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="js/Reto3.js"></script>
+</head>
+<body>
+	<nav>
+		<ul class="menu-horizontal">
+            <li><a href="Reto1.html">Reto 1</a></li>
+            <li><a href="Reto2.html">Reto 2</a></li>
+            <li><a href="Reto3.html">Reto 3</a></li>
+            <li><a href="Reto4.html">Reto 4</a></li>
+            <li><a href="Reto5.html">Reto 5</a></li>
+            <li><a href="Reto6.html">Reto 6</a></li>
+            <li><a href="Reto7.html">Reto 7</a></li>
+        </ul>
+		<div class="centered-text">
+			Retos JavaScript - Juan El Kantar
+		</div>
+
+		
+	</nav>
+
+
+	<div id="container" class="centered-text content">
+		<h1>Conversor de Temperaturas</h1>
+
+		<form>
+			<label for="temperatura">Ingresa una temperatura en grados:</label>
+			<input type="number" id="temperatura" name="temperatura" step="0.01">
+
+			<label for="convertirDe">Convertir de:</label>
+			<select id="convertirDe" name="convertirDe">
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+			</select>
+
+			<label for="convertirA">Deseas convertir a:</label>
+			<select id="convertirA" name="convertirA">
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+			</select>
+
+			<button type="button" onclick="convertirTemperatura()">CONVERTIR</button>
+		</form>
+	</div>
+
+</body>
+</html>
